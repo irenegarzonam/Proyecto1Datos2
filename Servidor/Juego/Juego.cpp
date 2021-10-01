@@ -26,7 +26,28 @@ void Juego::tick(){
         if(bola.y()>Pared::ALTURA){
             bola = Bola();
             bola.setDeep(0);
+            std::cout<<"OH NO!"<<std::endl;
+            timesLost++;
+            TPaleta-=10;
 
         }
     }
+    if(score>pBolas){
+        bolas.push_back(bola_);
+        pBolas+= 50;
+    }
+    if(timesLost>5){
+        finish = true;
+    }
+}
+Juego::Juego(){
+    bolas.push_back(bola_);
+    pBolas = 100;std::cout<<score<<std::endl;
+}
+
+Juego* Juego::getInstance(){
+    if(juegoI == nullptr){
+        juegoI = new Juego();
+    }
+    return juegoI;
 }
