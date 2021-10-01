@@ -7,20 +7,20 @@ SET(CMAKE_CXX_FLAGS -pthread)
 add_executable(server SocketServer.cpp
         SocketServer.h
         Breakout.cpp
-        Bloque.cpp
-        Bloque.h
+        Juego/Bloque.cpp
+        Juego/Bloque.h
         Painter.cpp
         Painter.h
-        Pared.cpp
-        Pared.h
+        Juego/Pared.cpp
+        Juego/Pared.h
         Force.cpp
         Force.h
-        Bola.cpp
-        Bola.h
-        Juego.cpp
-        Juego.h
-        Paleta.cpp
-        Paleta.h)
+        Juego/Bola.cpp
+        Juego/Bola.h
+        Juego/Juego.cpp
+        Juego/Juego.h
+        Juego/Paleta.cpp
+        Juego/Paleta.h)
 find_package(OpenGL REQUIRED)
 find_package(GLUT REQUIRED)
 include_directories( ${OPENGL_INCLUDE_DIRS} ${GLUT_INCLUDE_DIRS})

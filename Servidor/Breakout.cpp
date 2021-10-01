@@ -1,7 +1,7 @@
 #include <GL/glut.h>
 #include <iostream>
-#include "Juego.h"
-#include "Pared.h"
+#include "Juego/Juego.h"
+#include "Juego/Pared.h"
 #include "Painter.h"
 #include "SocketServer.h"
 SocketServer* server;
