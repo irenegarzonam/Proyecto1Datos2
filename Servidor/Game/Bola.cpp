@@ -1,5 +1,5 @@
 #include "Bola.h"
-#include "../Painter.h"
+#include "Painter.h"
 #include "Pared.h"
 
 int Vx = 60;

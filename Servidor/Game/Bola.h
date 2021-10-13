@@ -1,5 +1,5 @@
-#include "../Force.h"
-#include "../Painter.h"
+#include "Force.h"
+#include "Painter.h"
 #ifndef PROYECTO1DATOS2_BOLA_H
 #define PROYECTO1DATOS2_BOLA_H
 
